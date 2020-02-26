@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .main {
+                display: grid;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+            
+            .calculator .text {
+                width: 20%;
+            }
+            
+            .calculator .button {
+                width: 10%;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div class="main">
+            <form class="calculator">
+                <input class="text" type="text" name="sk1"> <br>
+                <input class="text" type="text" name="sk2"> <br>
+                <input class="text" type="text" name="answer"> <br>
+                <input class="button" type="button" name="sum" value="sum" onclick="answer.value=sk1.value - (-1)*sk2.value">
+                <input class="button" type="button" name="deduct" value="deduct" onclick="answer.value=sk1.value-sk2.value">
+                <input class="button" type="button" name="multiply" value="multiply" onclick="answer.value=sk1.value*sk2.value">
+                <input class="button" type="button" name="devide" value="devide" onclick="answer.value=sk1.value/sk2.value"> <br>
+                <input class="button" type="button" name="reset" value="reset" onclick="sk1.value = null; sk2.value= null;">
+            </form>
+        </div>
+    </body>
+</html>
